@@ -1,0 +1,15 @@
+.liClass{
+    padding: 3px;
+    width: fit-content;
+
+}
+
+.liClass input[type="checkbox"]{
+    display: none; 
+}
+
+
+.liClass input[type="checkbox"]:checked + label{
+    background: #2860a580;
+    border-radius: 7px;   
+}
