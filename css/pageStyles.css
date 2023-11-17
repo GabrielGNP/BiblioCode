@@ -1,3 +1,8 @@
+.ulClass{
+    padding-left: 15px;
+    
+}
+
 .liClass{
     padding: 3px;
     width: fit-content;
@@ -9,7 +14,9 @@
 }
 
 
-.liClass input[type="checkbox"]:checked + label{
-    background: #2860a580;
-    border-radius: 7px;   
+.liClass::marker{  
+    color: #ffc355;
+    font-size: 22px;
+    content: '\2315';
+    font-weight:600;
 }

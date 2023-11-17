@@ -5,29 +5,26 @@ function contentListBookCss(){
   let contentPageLeft = 
   "<h1>Libro de CSS</h1>"
   +"<ul>"
-    +'<li class="liClass">'
+    +'<li class="liClass liBookSkyBlue">'
       +'<input type="checkbox" id="BackGrad" name="optionBookCSS" value="BackGrad"/>'
       +'<label for="BackGrad" onmouseenter="hover(this);" onmouseleave="unHover(this)" >Backgrounds Gradients</label>'
     +'</li>'
-    +'<li class="liClass">'
+    +'<li class="liClass liBookSkyBlue">'
       +'<input type="checkbox" id="BordGrad" name="optionBookCSS" value="BordGrad" />'
       +'<label for="BordGrad"onmouseenter="hover(this); " onmouseleave="unHover(this)" >Borders Gradients</label>'
     +'</li>'
-    +'<li class="liClass">'
+    +'<li class="liClass liBookSkyBlue">'
       +'<input type="checkbox" id="ColorTextGrad" name="optionBookCSS" value="ColorTextGrad" />'
       +'<label for="ColorTextGrad" onmouseenter="hover(this); " onmouseleave="unHover(this)" >Color Text Gradients</label>'
     +'</li>'
-    +'<li class="liClass">'
+    +'<li class="liClass liBookSkyBlue">'
       +'<input type="checkbox" id="3DObjects" name="optionBookCSS" value="3DObjects" />'
       +'<label for="3DObjects" onmouseenter="hover(this); " onmouseleave="unHover(this)" >3D Objects</label>'
     +'</li>'
-    +'<li class="liClass">'
+    +'<li class="liClass liBookSkyBlue">'
       +'<input type="checkbox" id="CenterDiv" name="optionBookCSS" value="CenterDiv" />'
       +'<label for="CenterDiv" onmouseenter="hover(this);" onmouseleave="unHover(this)">Center Div</label>'
     +'</li>'
-    +"<li></li>"
-    +"<li></li>"
-    +"<li></li>"
   +"</ul>";
   
   pageRight.innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>posiciónese sobre alguno de los items</div>"
@@ -49,43 +46,6 @@ function contentListBookCss(){
           });
       });
   });
-}
-function unHover(thisElement){
-  $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>posiciónese sobre alguno de los items</div>";
-  thisElement.style.background = "";
-  thisElement.style.borderRadius = "";
-  changeContentPageRight();
-}
-function hover(thisElement){
-  thisElement.style.background = "#2860a580";
-  thisElement.style.borderRadius = "7px";
-  selectInput(thisElement.getAttribute('for'));
-}
-
-
-function changeContentPageRight(){
-  var inputSelected = document.querySelector('input[name="optionBookCSS"]:checked');
-  if(inputSelected == null){
-    $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>posiciónese sobre alguno de los items</div>";
-  }else{
-    selectInput(inputSelected.value);
-  }
-}
-
-function selectInput(value){  
-  switch (value){
-    case "BackGrad":
-      backGradSelected();
-      break;
-    case "CenterDiv":
-      centerDivSelected();
-      break;
-    case "BordGrad":
-      borderGradientSelected();
-      break;
-    default:
-      $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
-  }
 }
 
 

@@ -217,7 +217,7 @@
 
 
   /*Books Colors*/
-  
+  /* ---- Red ---- */
 .bookRed{
     background: #5f1515;
 }
@@ -240,7 +240,15 @@
 .scrollRed ::-webkit-scrollbar-thumb{
     background-color: #5f1515;
 }
+.liClass.liBookRed::marker{  
+    color: #af2626;
+}
+.liClass.liBookRed label input[type="checkbox"]:checked + label{  
+    background: #5f151581;
+    border-radius: 7px;   
+}
 
+/* ---- Blue ---- */
 .bookBlue{
     background: #122557;
 }
@@ -263,7 +271,15 @@
 .scrollBlue ::-webkit-scrollbar-thumb{
     background-color: #122557;
 }
+.liClass.liBookBlue::marker{  
+    color: #244f93;
+}
+.liClass.liBookBlue label input[type="checkbox"]:checked + label{  
+    background: #12265788;
+    border-radius: 7px;   
+}
   
+/* ---- SkyBlue ---- */
 .bookSkyBlue{
     background: #205393;
 }
@@ -286,7 +302,15 @@
 .scrollSkyBlue ::-webkit-scrollbar-thumb{
     background-color: #205393;
 }
+.liClass.liBookSkyBlue::marker{  
+    color: #4995f3;
+}
+.liClass.liBookSkyBlue input[type="checkbox"]:checked + label{  
+    background: #20549387;
+    border-radius: 7px;   
+}
   
+/* ---- Yellow ---- */
 .bookYellow{
     background: #8d661f;
 }
@@ -309,7 +333,15 @@
 .scrollYellow ::-webkit-scrollbar-thumb{
     background-color: #8d661f;
 }
+.liClass.liBookYellow::marker{  
+    color: #ffc355;
+}
+.liClass.liBookYellow input[type="checkbox"]:checked + label{  
+    background: #8d671f85;
+    border-radius: 7px;   
+}
 
+/* ---- LightPurple ---- */
 .bookLightPurple{
     background: #4b3a5d;
 }
@@ -332,7 +364,15 @@
 .scrollLightPurple ::-webkit-scrollbar-thumb{
     background-color: #4b3a5d;
 }
+.liClass.liBookLightPurple::marker{  
+    color: #8b75ad;
+}
+.liClass.liBookLightPurple input[type="checkbox"]:checked + label{  
+    background: #4b3a5d86;
+    border-radius: 7px;   
+}
  
+/* ---- Purple ---- */
 .bookPurple{
     background: #3e2a59;
 }
@@ -355,7 +395,15 @@
 .scrollPurple ::-webkit-scrollbar-thumb{
     background-color: #3e2a59;
 }
+.liClass.liBookPurple::marker{  
+    color: #754891;
+}
+.liClass.liBookPurple input[type="checkbox"]:checked + label{  
+    background: #3e2a5983;
+    border-radius: 7px;   
+}
   
+/* ---- Green ---- */
 .bookGreen{
     background: #1f4b1d;
 }
@@ -378,7 +426,15 @@
 .scrollGreen ::-webkit-scrollbar-thumb{
     background-color: #1f4b1d;
 }
+.liClass.liBookGreen::marker{  
+    color: #569755;
+}
+.liClass.liBookGreen input[type="checkbox"]:checked + label{  
+    background: #1f4b1d82;
+    border-radius: 7px;   
+}
   
+/* ---- DarkGreen ---- */
 .bookDarkGreen{
     background: #244524;
 }
@@ -401,7 +457,16 @@
 .scrollDarkGreen ::-webkit-scrollbar-thumb{
     background-color: #244524;
 }
+.liClass.liBookDarkGreen::marker{  
+    color: #567755;
+}
+.liClass.liBookDarkGreen input[type="checkbox"]:checked + label{  
+    background: #24452481;
+    border-radius: 7px;   
+}
   
+
+/* ---- Orange ---- */
 .bookOrange{
     background: #954c18;
 }
@@ -423,6 +488,13 @@
 .scrollOrange::-webkit-scrollbar-thumb,
 .scrollOrange ::-webkit-scrollbar-thumb{
     background-color: #954c18;
+}
+.liClass.liBookOrange::marker{  
+    color: #ef8c26;
+}
+.liClass.liBookOrange input[type="checkbox"]:checked + label{  
+    background: #954c1882;
+    border-radius: 7px;   
 }
   
   

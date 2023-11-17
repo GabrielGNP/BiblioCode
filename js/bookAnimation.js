@@ -249,6 +249,7 @@ function showDataBook(id){
   case "bookPHPSelected":
     break;
   case "bookHTMLSelected":
+    contentListBookHTML();
     break;
   case "bookCSSSelected":
     contentListBookCss();
