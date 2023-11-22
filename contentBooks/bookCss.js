@@ -48,6 +48,21 @@ function contentListBookCss(){
   });
 }
 
+function selectInputCSS(value){  
+  switch (value){
+    case "BackGrad":
+      backGradSelected();
+      break;
+    case "CenterDiv":
+      centerDivSelected();
+      break;
+    case "BordGrad":
+      borderGradientSelected();
+      break;
+    default:
+      $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
+  }
+}
 
 function backGradSelected(){
   let htmlContentPageRight = '<style>'

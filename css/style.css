@@ -91,6 +91,7 @@ body {
     border-top: 5px solid #3a3a3a;
     border-right: 5px solid #818181;
     border-bottom: 5px solid #818181;
+    overflow: auto;
 }
 .titleCodeView{
     color: white;

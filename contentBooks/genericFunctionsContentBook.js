@@ -6,7 +6,6 @@ function unHover(thisElement){
     thisElement.style.background = "";
     thisElement.style.borderRadius = "";
     let inputName = document.getElementById(thisElement.getAttribute('for')).name;
-    console.log(inputName);
     changeContentPageRight(inputName);
 }
 
@@ -19,6 +18,7 @@ function unHover(thisElement){
             break;
         }
     }
+    let objectInput = document.getElementById(thisElement.getAttribute('for'));
     switch(classFinded){
         case "liBookRed":
           thisElement.style.background = "#5f151581";
@@ -28,6 +28,7 @@ function unHover(thisElement){
           break;
         case "liBookSkyBlue":
           thisElement.style.background = "#20549387";
+          if(objectInput.name="optionBookCSS")selectInputCSS(objectInput.value);
           break;
         case "liBookYellow":
           thisElement.style.background = "#8d671f85";
@@ -46,39 +47,31 @@ function unHover(thisElement){
           break;
         case "liBookOrange":
           thisElement.style.background = "#954c1882";
+          if(objectInput.name="optionBookHTML")selectInputHTML(objectInput.value);
           break;   
         default:
           thisElement.style.background = "#5f151581";
           break;
-
     }
     thisElement.style.borderRadius = "7px";
-    selectInput(thisElement.getAttribute('for'));
   }
   
   
   function changeContentPageRight(nameInput){
-    console.log("===>" + nameInput);
     var inputSelected = document.querySelector('input[name="'+nameInput+'"]:checked');
     if(inputSelected == null){
       $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>posiciónese sobre alguno de los items</div>";
     }else{
-      selectInput(inputSelected.value);
+      switch(nameInput){
+        case "optionBookHTML":
+          selectInputHTML(inputSelected.value);
+          break;
+        case "optionBookCSS":
+          selectInputCSS(inputSelected.value);
+          break;
+      }
+      
     }
   }
   
-  function selectInput(value){  
-    switch (value){
-      case "BackGrad":
-        backGradSelected();
-        break;
-      case "CenterDiv":
-        centerDivSelected();
-        break;
-      case "BordGrad":
-        borderGradientSelected();
-        break;
-      default:
-        $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
-    }
-  }
+ 
