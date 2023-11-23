@@ -188,76 +188,82 @@ function contentListBookHTML(){
 }
 
 function selectInputHTML(value){  
-    switch (value){
-      case "headHTML":
-        headHTMLSelected();
-        break;
-      case "bodyHTML":
-        break;
-      case "navHTML":
-        break;
-      case "mainHTML":
-        break;
-      case "asideHTML":
-        break;
-      case "headerHTML":
-        break;
-      case "footerHTML":
-        break;
-      case "sectionHTML":
-        break;
-      case "articleHTML":
-        break;
-      case "spanHTML":
-        break;
-      case "divHTML":
-        break;
-      case "formHTML":
-        break;
-      case "fieldsetHTML":
-        break;
-      case "detailsHTML":
-        break;
-      case "summaryHTML":
-        break;
-      case "dialogHTML":
-        break;
-      case "titlesHTML":
-        break;
-      case "paragraphHTML":
-        break;
-      case "strongHTML":
-        break;
-      case "smallHTML":
-        break;
-      case "listOlUlHTML":
-        break;
-      case "imgHTML":
-        break;
-      case "videoHTML":
-        break;
-      case "audioHTML":
-        break;
-      case "iframeHTML":
-        break;
-      case "anchorHTML":
-        break;
-      case "inputHTML":
-        break;
-      case "datalistHTML":
-        break;
-      case "selectHTML":
-        break;
-      case "buttonHTML":
-        break;
-      default:
-        $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
-    }
+  switch (value){
+    case "headHTML":
+      headHTMLSelected();
+      break;
+    /*case "bodyHTML":
+      break;*/
+    case "navHTML":
+      navHTMLSelected();
+      break;
+    case "mainHTML":
+      mainHTMLSelected();
+      break;
+    case "asideHTML":
+      asideHTMLSelected();
+      break;
+    case "headerHTML":
+      headerHTMLSelected();
+      break;
+    case "footerHTML":
+      footerHTMLSelected();
+      break;
+    case "sectionHTML":
+      sectionHTMLSelected();
+      break;
+    /*case "articleHTML":
+      break;*/
+    /*case "spanHTML":
+      break;*/
+    /*case "divHTML":
+      break;*/
+    /*case "formHTML":
+      break;*/
+    /*case "fieldsetHTML":
+      break;*/
+    /*case "detailsHTML":
+      break;*/
+    /*case "summaryHTML":
+      break;*/
+    /*case "dialogHTML":
+      break;*/
+    /*case "titlesHTML":
+      break;*/
+    /*case "paragraphHTML":
+      break;*/
+    /*case "strongHTML":
+      break;*/
+    /*case "smallHTML":
+      break;*/
+    /*case "listOlUlHTML":
+      break;*/
+    /*case "imgHTML":
+      break;*/
+    /*case "videoHTML":
+      break;*/
+    /*case "audioHTML":
+      break;*/
+    /*case "iframeHTML":
+      break;*/
+    /*case "anchorHTML":
+      break;*/
+    /*case "inputHTML":
+      break;*/
+    /*case "datalistHTML":
+      break;*/
+    /*case "selectHTML":
+      break;*/
+    /*case "buttonHTML":
+      break;*/
+    default:
+      $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
   }
+}
 
-  function headHTMLSelected(){
-    let htmlContentPageRight = 
-    '<h1>Etiqueta &ltHead&gt</h1>'
+function headHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &lthead&gt</h1>'
     +'<p>Esta etiqueta es para especificar metadatos, los metadatos nos permitirán hacer ciertas configuraciones sobre la página que creemos, por ejemplo su título, enlaces a scripts y hojas de estilos, entre otros.</p>'
     +'<p>Algunas de las etiquetas de metadatos que podemos encontrar en el &lthead&gt son:<p>'
     +'<h3></h3>'
@@ -393,10 +399,122 @@ function selectInputHTML(value){
         +'   <b>console</b>.<y>log(</y><o>"comentario en consola"</o><y>)</y>\n'
         +'&lt<b>/sript</b>&gt'
       +'</pre>'
-    +'</div>'
+    +'</div>';
 
+  $q("#pageRight").innerHTML = htmlContentPageRight;    
+}
 
+function navHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &ltnav&gt</h1>'
+    +'<p>Es un elemento que se utiliza para crear una sección de navegación para poder agregar elementos para navegar por el contenido.</p>'
+    +'<p>Generalmente los elementos de navegación son &lta&gt (anchors)<p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>nav</b>&gt\n'
+        +'  &lt<b>a href</b>=<o>"url"</o>&gtir a&lt/<b>a</b>&gt\n'
+        +'  &lt<b>a href</b>=<o>"url"</o>&gtir a&lt/<b>a</b>&gt\n'
+        +'  &lt<b>a href</b>=<o>"url"</o>&gtir a&lt/<b>a</b>&gt\n'
+        +'&lt/<b>nav</b>&gt'
+      +'</pre>'
+    +'</div>';
 
+  $q("#pageRight").innerHTML = htmlContentPageRight;    
+}
 
-    $q("#pageRight").innerHTML = htmlContentPageRight;    
-  }
+function mainHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &ltmain&gt</h1>'
+    +'<p>Es el elemento que englobará todo el contenido principal de la página. El main contendrá el contenido que será único en la página. Contendrá todo el contenido que no será repetitivo en las diferentes páginas de la misma web.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>main</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>main</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;    
+}
+
+function asideHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &ltaside&gt</h1>'
+    +'<p>Es algo que se utiliza para anexar información al contenido mostrado. Por ejemplo, se muestra un proyecto y se agrega un &ltaside&gt para agregar información sobre las tecnologías utilizadas. Se utilizan para anexar información extra y que se relaciona con el contenido.  Algunas veces se utiliza el aside para agregar navegación también.</p>'
+    +'<p>Generalmente el aside es un elemento que aparece a un lado en la página.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>aside</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>aside</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;    
+}
+
+function headerHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &ltheader&gt</h1>'
+    +'<p>El elemento Header es el encabezado del contenido mostrado, si tenemos distintas secciones, cada sección puede contener un &ltheader&gt. El header puede utilizarse en distintas partes de la página pero siempre se debe recordar que es un elemento para escribir encabezados.</p>'
+    +'<p>El elemento Header (&ltheader&gt) puede representar un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.</p>'
+    +'<p>Este elemento puede utilizarse tantas veces como se necesite, no es un elemento que estrictamente deba utilizarse una sola vez. Por ejemplo, podría utilizarse un header dentro de cada &ltarticle&gt como header del arrtículo y uno en el body como header de la página</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>header</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>header</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;    
+}
+
+function footerHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &ltfooter&gt</h1>'
+    +'<p>Representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección. Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>'
+    +'<p>Este elemento puede utilizarse tantas veces como se necesite, no es un elemento que estrictamente deba utilizarse una sola vez. Por ejemplo, podría utilizarse un footer dentro de cada &ltarticle&gt como footer del arrtículo y uno en el body como footer de la página</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>footer</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>footer</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;   
+}
+
+function sectionHTMLSelected(){
+  let htmlContentPageRight = 
+    '<h1>Etiqueta &ltsection&gt</h1>'
+    +'<p>Se utiliza para marcar secciones independientes genéricas de información. El &ltarticle&gt engloba bloques y el &ltsection&gt engloba los &ltarticle&gt. Puede haber &ltsection&gt dentro de un &ltsection&gt, serían secciones dentro de una sección, subsecciones. No es recomendable abusar y utilizar muchas subsecciones, debe manejarse con cuidado.</p>'
+    +'<p>No se debe confundir el uso de un &ltsection&gt con un &ltarticle&gt.</p>'
+    +'<p>el section puede contener otros elementos, no estrictamente &ltarticle&gt</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>section</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>section</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;   
+}
