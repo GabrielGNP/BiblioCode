@@ -145,6 +145,11 @@ function contentListBookHTML(){
             '</li>'+
       
             '<li class="liClass liBookOrange">'+
+                '<input type="checkbox" id="labelHTML" name="optionBookHTML" value="labelHTML"/>'+
+                '<label for="labelHTML" onmouseenter="hover(this); " onmouseleave="unHover(this)">&lt;label&gt;</label>'+
+            '</li>'+
+
+            '<li class="liClass liBookOrange">'+
                 '<input type="checkbox" id="inputHTML" name="optionBookHTML" value="inputHTML"/>'+
                 '<label for="inputHTML" onmouseenter="hover(this); " onmouseleave="unHover(this)">&lt;input&gt;</label>'+
             '</li>'+
@@ -212,16 +217,21 @@ function selectInputHTML(value){
     case "sectionHTML":
       sectionHTMLSelected();
       break;
-    /*case "articleHTML":
-      break;*/
-    /*case "spanHTML":
-      break;*/
-    /*case "divHTML":
-      break;*/
-    /*case "formHTML":
-      break;*/
-    /*case "fieldsetHTML":
-      break;*/
+    case "articleHTML":
+      articleHTMLSelected();
+      break;
+    case "spanHTML":
+      spanHTMLSelected();
+      break;
+    case "divHTML":
+      divHTMLSelected();
+      break;
+    case "formHTML":
+      formHTMLSelected();
+      break;
+    case "fieldsetHTML":
+      fieldsetHTMLSelected();
+      break;
     /*case "detailsHTML":
       break;*/
     /*case "summaryHTML":
@@ -248,6 +258,9 @@ function selectInputHTML(value){
       break;*/
     /*case "anchorHTML":
       break;*/
+    case "labelHTML":
+      labelHTMLSelected();
+      break;
     /*case "inputHTML":
       break;*/
     /*case "datalistHTML":
@@ -517,4 +530,182 @@ function sectionHTMLSelected(){
     +'</div>';
 
   $q("#pageRight").innerHTML = htmlContentPageRight;   
+}
+
+function articleHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltarticle&gt</h1>'
+    +'<p>Es un elemento con información propia contenida y que puede copiarse y pegarse en cualquier otro sitio y que va a seguir funcionando igual. Es un elemento que no depende de la información o contenido externo. Engloba un contenido independiente del contenido fuera del <article>. Permite englobar contenido y que este pueda moverse a otros documentos o lugares del mismo documento sin perder su significado.</p>'
+    +'<p>Un article puede contener un &ltheader&gt y un &ltfooter&gt. Tanto el &ltheader&gt como el &ltfooter&gt pueden utilizarse tantas veces como se desee, no son elementos que puedan ser utilizados una sola vez.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>article</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>article</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function spanHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltspan&gt</h1>'
+    +'<p>El span es una etiqueta no semántica que permite ubicar el contenido en línea. Siempre que sea posible utilizar una etiqueta semántica, es recomendable utilizarlas y no utilizar el &ltspan&gt</p>'
+    +'<p>Todos los span tienen el estilo display: inline de forma predeterminada por lo que se ajusta al contenido de sus elementos en línea, en un mismo row.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>span</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>span</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function divHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltdiv&gt</h1>'
+    +'<p>El div es una etiqueta no semántica que permite ubicar el contenido en bloque. Siempre que sea posible utilizar una etiqueta semántica, es recomendable utilizarlas y no utilizar el &ltdiv&gt</p>'
+    +'<p>Todos los span tienen el estilo display: block de forma predeterminada por lo que su tamaño se ajusta al contenido de sus elementos pero puede definirse un tamaño específico para este elemento.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>div</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>div</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function formHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltform&gt</h1>'
+    +'<p>Los formularios son muy importantes para mandar información al servidor.</p>'
+    +'<p>&ltform&gt tiene dos atributos importantes: method y action.</p>'
+    +'<h3>method</h3>'
+    +'<p>method es el tipo de comunicación que se tendrá con el servidor. Por ejemplo el protocolo post para enviar información al servidor.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>form method</b>=<o>”post”</o>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>form</b>&gt'
+      +'</pre>'
+    +'</div>'
+    +'<h3>action</h3>'
+    +'<p>action es la url a la que se enviarán los datos del formulario.</p>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>form action</b>=<o>"/”</o>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>form</b>&gt'
+      +'</pre>'
+    +'</div>'
+    +'<h3></h3>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>form method</b>=<o>”post”</o> <b>action</b>=<o>"/”</o>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>form</b>&gt'
+      +'</pre>'
+    +'</div>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function fieldsetHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltfieldset&gt</h1>'
+    +'<p>Permite agrupar inputs en el &ltform&gt</p>'
+    +'<p>Es una agrupación de los diferentes inputs que se tendrán. Dentro del fieldset se utilizaran las siguientes etiquetas.</p>'
+    +'<ul>'
+      +'<li><a class="btnNonStyle upperStyle" href="#legend">&ltlegend&gt</a><p style="display:inline"> permite poner una leyenda al fieldset</p></li><br>'
+      +'<li><a class="btnNonStyle upperStyle" href="">&ltlabel&gt</a><p style="display:inline"> el &ltlabel&gt es una etiqueta para los &ltinputs&gt. Cuando se hace clic en la etiqueta, se debe poner el foco en el &ltinputs&gt correspondiente.</p></li><br>'
+      +'<li><a class="btnNonStyle upperStyle" href="">&ltinput&gt</a><p style="display:inline"> se utilizan para poder escribir la información para luego mandarlo y completar el formulario.</p></li><br>'
+      +'<li><a class="btnNonStyle upperStyle" href="">&ltselect&gt</a><p style="display:inline"> para poder seleccionar una opción de las listadas con &ltoption&gt dentro del &ltselect&gt</p></li><br>'
+      +'<li><a class="btnNonStyle upperStyle" href="">&ltdatalist&gt</a><p style="display:inline"> es un elemento que permite hacer autoclompetados. Va acompañado de un &ltinput&gt.</p></li><br>'
+    +'</ul>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>fieldset</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>fieldset</b>&gt'
+      +'</pre>'
+    +'</div>'
+    +'<h3 id="legend">legend</h3>'
+    +'<div class="panelCodeView">'
+      +'<div class="titleCodeView">HTML</div>'
+      +'<pre class="codeView">'
+        +'&lt<b>fieldset style</b>=<o>"background: #f1f1f1;"</o>&gt\n'
+        +'  &lt<b>legend</b>&gttítulo del legend&lt/<b>legend</b>&gt\n'
+        +'  ...\n'
+        +'  ...\n'
+        +'&lt/<b>fieldset</b>&gt'
+      +'</pre>'
+    +'</div>'
+    +'<fieldset style="background: #f1f1f1;">'
+    +'  <legend>título del legend</legend>'
+    +'</fieldset>'
+    
+    ;
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function labelHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltlabel&gt</h1>'
+  +'<p>El label es una etiqueta para los inputs. Cuando se hace clic en la etiqueta, se debe poner el foco en el input correspondiente.<p>'
+  +'<p>Hay dos formas de asignar o vincular un &ltlabel&gt a un &ltinput&gt:<p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<b>label for</b>=<o>”name”</o>&gtNombre: &lt/<b>label</b>&gt\n'
+      +'&lt<b>input type</b>="text" <b>id</b>=<o>"name"</o> <b>name</b>=<o>"name"</o> <b>placeholder</b>=<o>"Escriba su nombre"</o>&gt\n'
+    +'</pre>'
+  +'</div>'
+  +'<label for="name">Nombre: </label>'
+  +'<input type="text" id="name" name="name" placeholder="Escriba su nombre">'
+  +'<p> De esta manera, el id del input debe ser el que se ponga en el for del label para que el label quede vinculado al input</p>'
+  +'<br>'
+  +'<p> La segunda forma no utiliza un for en el label:'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<b>label</b>&gt\n'
+      +'   Nombre: <br>'
+      +'   &lt<b>input type</b>="text" <b>name</b>=<o>"name"</o> <b>placeholder</b>=<o>"Escriba su nombre"</o>&gt\n'
+      +'&lt/<b>label</b>&gt'
+    +'</pre>'
+  +'</div>'
+  +'<label>'
+  +'   Nombre: '
+  +'   <input type="text" name="name" placeholder="Escriba su nombre"'
+  +'</label>'
+  +'<p> De esta manera se evita utilizar id en los inputs y no es necesario agregar el atributo for a los label ya que al englobar el input, el label ya les hace referencia de manera automatica</p>';
+
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
 }
