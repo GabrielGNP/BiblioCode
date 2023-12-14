@@ -16,8 +16,65 @@
     <script src="contentBooks/bookCss.js"></script>
     <script src="contentBooks/bookHTML.js"></script>
 
+    <style>
+        @keyframes flicker {
+      0%, 100% { stop-opacity: 0.6; }
+      50% { stop-opacity: 0.9; }
+    }
+
+    svg stop {
+      animation: flicker 2s infinite alternate;
+    }
+      </style>
 </head>
 <body>
+    <div class="iluminationContainer">
+        <div class="candle" style="position: absolute;
+        bottom: -30px;
+        left: 30px;
+        height: 150px;
+        width: 60px;">
+            <div class="bodyCandle" style="
+                position: absolute;
+                bottom: 0px;
+                height: 130px;
+                width: 60px;
+                background-color: peachpuff;
+                border-radius: 10px;">
+            </div>
+            
+            <div class="headCandle" style="
+                position: absolute; 
+                top: 0px; 
+                height: 45px;
+                width: 60px;
+                background-color: rgb(191, 142, 100);
+                border-radius: 30px;">
+            </div>
+            <div class="wickCandle" style="
+                position: absolute;
+                top: 5px;
+                left: calc(50% - 2.5px);
+                background: linear-gradient(#8d5608,black 70%);
+                height: 25px;
+                width: 5px;">
+            </div>
+            <div class="flameCandle" style="position: absolute; height: 100%; width: 100%; left: 0px;">
+                <svg style="position: absolute;
+                top: -61px;
+                left: calc(50% - 15px);" height="75" width="30" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" style="stop-color: #ffcc00ab; stop-opacity: 1" />
+                          <stop offset="100%" style="stop-color: #ff6600c2; stop-opacity: 1" />
+                        </linearGradient>
+                      </defs>
+                    <path d="M 15 5 Q -10 65 15 75 Q 40 65 15 10 Z" fill="url(#flameGradient)" stroke="transparent" stroke-width="2"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="ilumination"></div>
+    </div>
     <div class="librarie">
         <div class="top_librarie"></div>
         <div class="shelf" id="shelf">
@@ -93,11 +150,11 @@
                 <div class="lomo bookLomoSkyBlue"><div class="titleBook">CSS</div></div>
                 </div>
             </div> 
-            <div class="space_book" id="bookMagicTest1">
-                <div class="book bookDarkGreen">
-                <div class="back__book bookBack__bookDarkGreen"></div>
+            <div class="space_book" id="bookGit">
+                <div class="book bookBlack">
+                <div class="back__book bookBack__bookBlack"></div>
                 <div class="line"></div>
-                <div class="lomo bookLomoDarkGreen"><div class="titleBook" style="font-size: 22px; transform: translateX(0px) translateY(197px) rotateZ(270deg);">Magic Test</div></div>
+                <div class="lomo bookLomoBlack"><div class="titleBook">Git</div></div>
                 </div>
             </div> 
             <div class="space_book" id="bookMagicTest2">

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $gi("bookPHP").addEventListener('click', selectBook);
     $gi("bookHTML").addEventListener('click', selectBook);
     $gi("bookCSS").addEventListener('click', selectBook);
-    $gi("bookMagicTest1").addEventListener('click', selectBook);
+    $gi("bookGit").addEventListener('click', selectBook);
     $gi("bookMagicTest2").addEventListener('click', selectBook);
     $gi("bookMagicTest3").addEventListener('click', selectBook);
     $gi("bookMagicTest4").addEventListener('click', selectBook);
