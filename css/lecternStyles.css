@@ -1,68 +1,108 @@
  
-  .lectern{
-    height: 100%;
-    width: 100%;
-    background:  #714219;
-    position: absolute;
-    top: 300px;
-    z-index: -8;
-    display: grid;
-    place-items: center;
-    
-  }
+.lectern{
+  height: 100%;
+  width: 100%;
+  background:  #714219;
+  position: absolute;
+  top: 300px;
+  z-index: -8;
+  display: grid;
+  place-items: center;    
+}
 
-  .border_lectern_top{
-    height: 25px;
-    width: 100%;
-    background: #8d5320;
-    border-bottom: 20px solid #593515;
-    position: absolute;
-    top: 0px;
-  }
-  .border_lectern_left{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 25px;
-        background: #8d5320;
-  }
-  .border_lectern_right{
-    position: absolute;
-        top: 0px;
-        right: 0px;
-        height: 100%;
-        width: 25px;
-        background: #8d5320;
-  }
-  .border_lectern_bottom{
-    height: 25px;
-    width: 100%;
-    background: #8d5320;
-    border-bottom: 20px solid #593515;
-    position: absolute;
-    bottom: 0px;
-  }
+.border_lectern_top{
+  height: 25px;
+  width: 100%;
+  background: #8d5320;
+  border-bottom: 20px solid #593515;
+  position: absolute;
+  top: 0px;
+}
+.border_lectern_left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 25px;
+  background: #8d5320;
+}
+.border_lectern_right{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 25px;
+  background: #8d5320;
+}
+.border_lectern_bottom{
+  height: 25px;
+  width: 100%;
+  background: #8d5320;
+  border-bottom: 20px solid #593515;
+  position: absolute;
+  bottom: 0px;
+}
   
-  .book_site{
-    background: #a96d37;
-    height: 75%;
-    width: 75%;
-    border-bottom: 8px solid #8d5320;
-    top: 285px;
-  }
+.book_site{
+  background: #a96d37;
+  height: 75%;
+  width: 75%;
+  border-bottom: 8px solid #8d5320;
+  top: 285px;
+}
   
-  .iluminationContainer{
-    position: absolute; 
-    z-index: 1000000;
-     pointer-events: none;
-   }
-   .ilumination{
-     position: sticky;
-     height: 100vh;
-     width: 100vw;
-     background: radial-gradient(circle at 5% 75%,#f792004a ,#00000066,#000000a1 100%);
-     top: 0px;
-     left: 0px;
-     
-   }
+.iluminationContainer{
+  position: absolute; 
+  z-index: 300;
+  pointer-events: none;
+}
+.ilumination{
+  position: sticky;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at 5% 75%,#f792004a ,#00000066,#000000a1 100%);
+  top: 0px;
+  left: 0px;
+}
+.candle{
+  position: absolute;
+  bottom: -30px;
+  left: 2vw;
+  height: 150px;
+  width: 60px;
+}
+.bodyCandle{
+  position: absolute;
+  bottom: 0px;
+  height: 130px;
+  width: 60px;
+  background-color: peachpuff;
+  border-radius: 10px;
+}
+.headCandle{
+  position: absolute; 
+  top: 0px; 
+  height: 45px;
+  width: 60px;
+  background-color: rgb(191, 142, 100);
+  border-radius: 30px;
+}
+.wickCandle{
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 2.5px);
+  background: linear-gradient(#8d5608,black 70%);
+  height: 25px;
+  width: 5px;
+}
+.flameCandle{
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  left: 0px;
+}
+.flameCandle svg{
+  position: absolute;
+  top: -61px;
+  left: calc(50% - 15px); 
+}

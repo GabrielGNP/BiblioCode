@@ -29,40 +29,16 @@
 </head>
 <body>
     <div class="iluminationContainer">
-        <div class="candle" style="position: absolute;
-        bottom: -30px;
-        left: 30px;
-        height: 150px;
-        width: 60px;">
-            <div class="bodyCandle" style="
-                position: absolute;
-                bottom: 0px;
-                height: 130px;
-                width: 60px;
-                background-color: peachpuff;
-                border-radius: 10px;">
+        <div class="candle">
+            <div class="bodyCandle">
             </div>
             
-            <div class="headCandle" style="
-                position: absolute; 
-                top: 0px; 
-                height: 45px;
-                width: 60px;
-                background-color: rgb(191, 142, 100);
-                border-radius: 30px;">
+            <div class="headCandle">
             </div>
-            <div class="wickCandle" style="
-                position: absolute;
-                top: 5px;
-                left: calc(50% - 2.5px);
-                background: linear-gradient(#8d5608,black 70%);
-                height: 25px;
-                width: 5px;">
+            <div class="wickCandle">
             </div>
-            <div class="flameCandle" style="position: absolute; height: 100%; width: 100%; left: 0px;">
-                <svg style="position: absolute;
-                top: -61px;
-                left: calc(50% - 15px);" height="75" width="30" xmlns="http://www.w3.org/2000/svg">
+            <div class="flameCandle">
+                <svg height="75" width="30" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                           <stop offset="0%" style="stop-color: #ffcc00ab; stop-opacity: 1" />
@@ -208,6 +184,11 @@
         <button id="returnShelf"></button>
     </div>-->
     
-   
+    <section id="alertNoResponsive" class="alertNoResponsive">
+        <button onclick="closeAlertNoResponsive();">X</button>
+        <h1>Resolución no idónea</h1>
+        <p>La Resolución de su pantalla no es tan grande como para asegurar la correctitud visual del contenido. El estilo de la página no está adaptado para pantallas de baja resolución por lo que es posible que no se vea correctamente.</p>
+        <p>Puede continuar visualizando la página al cerrar este mensaje pero si desea ver el contenido de la página de una manera más cómoda, considere la posibilidad de verlo con una pantalla más grande.</p>
+    </section>
     
 </body>

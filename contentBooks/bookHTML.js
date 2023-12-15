@@ -233,6 +233,7 @@ function selectInputHTML(value){
       fieldsetHTMLSelected();
       break;
     case "detailsHTML":
+      detailsHTMLSelected();
       break;
     /*case "summaryHTML":
       break;*/

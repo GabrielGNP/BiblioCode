@@ -139,7 +139,7 @@
 .space_book_selected{
     position: absolute; 
     top: 0; 
-    z-index: 2000;
+    z-index: 200;
     transition: var(--timeAnimationBookSelected) ease;
     
     width:400px;

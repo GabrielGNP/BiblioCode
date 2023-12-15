@@ -74,4 +74,7 @@ function unHover(thisElement){
     }
   }
   
+  function closeAlertNoResponsive(){
+    document.getElementById("alertNoResponsive").style.display = "none";
+  }
  
