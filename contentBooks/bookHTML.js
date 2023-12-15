@@ -232,8 +232,8 @@ function selectInputHTML(value){
     case "fieldsetHTML":
       fieldsetHTMLSelected();
       break;
-    /*case "detailsHTML":
-      break;*/
+    case "detailsHTML":
+      break;
     /*case "summaryHTML":
       break;*/
     /*case "dialogHTML":
@@ -707,5 +707,22 @@ function labelHTMLSelected(){
   +'</label>'
   +'<p> De esta manera se evita utilizar id en los inputs y no es necesario agregar el atributo for a los label ya que al englobar el input, el label ya les hace referencia de manera automatica</p>';
 
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function detailsHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltdetails&gt</h1>'
+  +'<p>Permite tener una caja desplegable de forma predeterminada sin necesidad de implementar JavaScript.<p>'
+  +'<p>Dentro del &ltdetails&gt se utilizara la etiqueta &ltsummary&gt<p>'
+  +'<p>&ltsummary&gt&lt/summary&gt que indicará el “título” de esta caja desplegable.</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<b>label for</b>=<o>”name”</o>&gtNombre: &lt/<b>label</b>&gt\n'
+      +'&lt<b>input type</b>="text" <b>id</b>=<o>"name"</o> <b>name</b>=<o>"name"</o> <b>placeholder</b>=<o>"Escriba su nombre"</o>&gt\n'
+    +'</pre>'
+  +'</div>'
+  ;
   $q("#pageRight").innerHTML = htmlContentPageRight;  
 }
