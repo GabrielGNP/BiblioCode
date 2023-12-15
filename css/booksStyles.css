@@ -219,26 +219,26 @@
   /*Books Colors*/
   /* ---- Red ---- */
 .bookRed{
-    background: #5f1515;
+    background: #430c0c;
 }
 .bookLomoRed{
-    background: linear-gradient(90deg,#5f1515, #af2626, #5f1515);
+    background: linear-gradient(90deg,#7a2020 -6%, #a33030, #590d0d 79%);
     border-bottom: 4.5px solid #00000052;
-    color: #4b0404;
+    color: #3e0404;
 }
 .bookBack__bookRed{
-    border-left: 2px solid #5f1515;
-    border-right: 2px solid #5f1515;
-    border-bottom: 2px solid #5f1515;
+    border-left: 2px solid #430c0c;
+    border-right: 2px solid #430c0c;
+    border-bottom: 2px solid #430c0c;
 }
 .bookCoverRed{
-    background: radial-gradient(#af2626, #5f1515);
-    border-left: 4px solid #5f1515;
+    background: radial-gradient(#af2626, #430c0c);
+    border-left: 4px solid #430c0c;
     color: #4b0404;
 }
 .scrollRed::-webkit-scrollbar-thumb,
 .scrollRed ::-webkit-scrollbar-thumb{
-    background-color: #5f1515;
+    background-color: #430c0c;
 }
 .liClass.liBookRed::marker{  
     color: #af2626;
@@ -250,26 +250,26 @@
 
 /* ---- Blue ---- */
 .bookBlue{
-    background: #122557;
+    background: #0f1f47;
 }
 .bookLomoBlue{
-    background: linear-gradient(90deg, #122557, #244f93, #122557);
+    background: linear-gradient(90deg, #213872 -6%, #244f93, #0f1f47 79%);
     border-bottom: 4.5px solid #00000052;
     color: #8ab4f8;
 }
 .bookBack__bookBlue{
-    border-left: 2px solid #122557;
-    border-right: 2px solid #122557;
-    border-bottom: 2px solid #122557;
+    border-left: 2px solid #0f1f47;
+    border-right: 2px solid #0f1f47;
+    border-bottom: 2px solid #0f1f47;
 }
 .bookCoverBlue{
-    background: radial-gradient(#244f93, #122557);
-    border-left: 4px solid #122557;
+    background: radial-gradient(#244f93, #0f1f47);
+    border-left: 4px solid #0f1f47;
     color: #8ab4f8;
 }
 .scrollBlue::-webkit-scrollbar-thumb,
 .scrollBlue ::-webkit-scrollbar-thumb{
-    background-color: #122557;
+    background-color: #0f1f47;
 }
 .liClass.liBookBlue::marker{  
     color: #244f93;
@@ -281,26 +281,26 @@
   
 /* ---- SkyBlue ---- */
 .bookSkyBlue{
-    background: #205393;
+    background: #1e487c;
 }
 .bookLomoSkyBlue{
-    background: linear-gradient(90deg, #205393, #4995f3, #205393);
+    background: linear-gradient(90deg, #2e6ebd -6%, #4995f3, #1e487c 79%);
     border-bottom: 4.5px solid #00000052;
-    color: #254085;
+    color: #1b3064;
 }
 .bookBack__bookSkyBlue{
-    border-left: 2px solid #205393;
-    border-right: 2px solid #205393;
-    border-bottom: 2px solid #205393;
+    border-left: 2px solid #1e487c;
+    border-right: 2px solid #1e487c;
+    border-bottom: 2px solid #1e487c;
 }
 .bookCoverSkyBlue{
-    background: radial-gradient(#4995f3, #205393);
-    border-left: 4px solid #205393;
+    background: radial-gradient(#4995f3, #1e487c);
+    border-left: 4px solid #1e487c;
     color: #254085;
 }
 .scrollSkyBlue::-webkit-scrollbar-thumb,
 .scrollSkyBlue ::-webkit-scrollbar-thumb{
-    background-color: #205393;
+    background-color: #1e487c;
 }
 .liClass.liBookSkyBlue::marker{  
     color: #4995f3;
@@ -312,57 +312,57 @@
   
 /* ---- Yellow ---- */
 .bookYellow{
-    background: #8d661f;
+    background: #6d4b0c;
 }
 .bookLomoYellow{
-    background: linear-gradient(90deg,#8d661f, #ffc355,#8d661f);
+    background: linear-gradient(90deg,#9e711e -6%, #f4a91c,#6d4b0c 79%);
     border-bottom: 4.5px solid #00000052;
-    color: #754c00;
+    color: #513603;
   }
 .bookBack__bookYellow{
-    border-left: 2px solid #8d661f;
-    border-right: 2px solid #8d661f;
-    border-bottom: 2px solid #8d661f;
+    border-left: 2px solid #6d4b0c;
+    border-right: 2px solid #6d4b0c;
+    border-bottom: 2px solid #6d4b0c;
 }
 .bookCoverYellow{
     background: radial-gradient(#ffc355,#8d661f);
-    border-left: 4px solid #8d661f;
+    border-left: 4px solid #6d4b0c;
     color: #754c00;
 }
 .scrollYellow::-webkit-scrollbar-thumb,
 .scrollYellow ::-webkit-scrollbar-thumb{
-    background-color: #8d661f;
+    background-color: #6d4b0c;
 }
 .liClass.liBookYellow::marker{  
     color: #ffc355;
 }
 .liClass.liBookYellow input[type="checkbox"]:checked + label{  
-    background: #8d671f85;
+    background: #6d4b0c;
     border-radius: 7px;   
 }
 
 /* ---- LightPurple ---- */
 .bookLightPurple{
-    background: #4b3a5d;
+    background: #522c7a;
 }
 .bookLomoLightPurple{
-    background: linear-gradient(90deg,#4b3a5d, #8b75ad,#4b3a5d);
+    background: linear-gradient(90deg,#684b88 -6%, #8b75ad,#522c7a 79%);
     border-bottom: 4.5px solid #00000052;
     color: #3a294d;
 }
 .bookBack__bookLightPurple{
-    border-left: 2px solid #4b3a5d;
-    border-right: 2px solid #4b3a5d;
-    border-bottom: 2px solid #4b3a5d;
+    border-left: 2px solid #522c7a;
+    border-right: 2px solid #522c7a;
+    border-bottom: 2px solid #522c7a;
 }
 .bookCoverLightPurple{
-    background: radial-gradient(#8b75ad,#4b3a5d);
-    border-left: 4px solid #4b3a5d;
+    background: radial-gradient(#8b75ad,#321e47);
+    border-left: 4px solid ;
     color: #3a294d;
 }
 .scrollLightPurple::-webkit-scrollbar-thumb,
 .scrollLightPurple ::-webkit-scrollbar-thumb{
-    background-color: #4b3a5d;
+    background-color: #522c7a;
 }
 .liClass.liBookLightPurple::marker{  
     color: #8b75ad;
@@ -374,26 +374,26 @@
  
 /* ---- Purple ---- */
 .bookPurple{
-    background: #3e2a59;
+    background: #411f6c;
 }
 .bookLomoPurple{
-    background: linear-gradient(90deg, #3e2a59, #754891, #3e2a59);
+    background: linear-gradient(90deg, #503a6b -6%, #754891, #411f6c 79%);
     border-bottom: 4.5px solid #00000052;
     color: #2a124b;
 }
 .bookBack__bookPurple{
-    border-left: 2px solid #3e2a59;
-    border-right: 2px solid #3e2a59;
-    border-bottom: 2px solid #3e2a59;
+    border-left: 2px solid #411f6c;
+    border-right: 2px solid #411f6c;
+    border-bottom: 2px solid #411f6c;
 }
 .bookCoverPurple{
-    background: radial-gradient(#754891, #3e2a59);
-    border-left: 4px solid #3e2a59;
+    background: radial-gradient(#754891, #411f6c);
+    border-left: 4px solid #411f6c;
     color: #2a124b;
 }
 .scrollPurple::-webkit-scrollbar-thumb,
 .scrollPurple ::-webkit-scrollbar-thumb{
-    background-color: #3e2a59;
+    background-color: #411f6c;
 }
 .liClass.liBookPurple::marker{  
     color: #754891;
@@ -408,14 +408,14 @@
     background: #1f4b1d;
 }
 .bookLomoGreen{
-    background: linear-gradient(90deg,#1f4b1d, #569755,#1f4b1d);
+    background: linear-gradient(90deg,#2d5b2a -6%, #569755,#14590e 79%);
     border-bottom: 4.5px solid #00000052;
     color: #065305;
 }
 .bookBack__bookGreen{
-    border-left: 2px solid #1f4b1d;
-    border-right: 2px solid #1f4b1d;
-    border-bottom: 2px solid #1f4b1d;
+    border-left: 2px solid #14590e;
+    border-right: 2px solid #14590e;
+    border-bottom: 2px solid #14590e;
 }
 .bookCoverGreen{
     background: radial-gradient(#569755,#1f4b1d);
@@ -439,14 +439,14 @@
     background: #244524;
 }
 .bookLomoDarkGreen{
-    background: linear-gradient(90deg, #244524, #567755, #244524);
+    background: linear-gradient(90deg, #2d532d -6%, #567755, #0f3a0f 79%);
     border-bottom: 4.5px solid #00000052;
     color: #0c270c;
 }
 .bookBack__bookDarkGreen{
-    border-left: 2px solid #244524;
-    border-right: 2px solid #244524;
-    border-bottom: 2px solid #244524;
+    border-left: 2px solid #0f3a0f;
+    border-right: 2px solid #0f3a0f;
+    border-bottom: 2px solid #0f3a0f;
 }
 .bookCoverDarkGreen{
     background: radial-gradient(#567755, #244524);
@@ -471,14 +471,14 @@
     background: #954c18;
 }
 .bookLomoOrange{
-    background: linear-gradient(90deg, #954c18, #ef8c26, #954c18);
+    background: linear-gradient(90deg, #b3632a -6%, #d38435, #72380e 79%);
     border-bottom: 4.5px solid #00000052;
     color: #532b0f;
 }
 .bookBack__bookOrange{
-    border-left: 2px solid #954c18;
-    border-right: 2px solid #954c18;
-    border-bottom: 2px solid #954c18;
+    border-left: 2px solid #72380e;
+    border-right: 2px solid #72380e;
+    border-bottom: 2px solid #72380e;
 }
 .bookCoverOrange{
     background: radial-gradient(#ef8c26, #954c18);
@@ -496,8 +496,37 @@
     background: #954c1882;
     border-radius: 7px;   
 }
-  
-  
+
+/* ---- Black ---- */
+.bookBlack{
+    background: #333333;
+}
+.bookLomoBlack{
+    background:linear-gradient(90deg,#333333 -6%, #5a5454, #333333 69%);
+    border-bottom: 4.5px solid #00000052;
+    color: #cf6317;
+}
+.bookBack__bookBlack{
+    border-left: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+.bookCoverBlack{
+    background: radial-gradient(#877f7f, #333333);
+    border-left: 4px solid #333333;
+    color: #202020;
+}
+.scrollBlack::-webkit-scrollbar-thumb,
+.scrollBlack ::-webkit-scrollbar-thumb{
+    background-color: #954c18;
+}
+.liClass.liBookBlack::marker{  
+    color: #ef8c26;
+}
+.liClass.liBookBlack input[type="checkbox"]:checked + label{  
+    background: #954c1882;
+    border-radius: 7px;   
+}
   
   /*Transparente*/
   
@@ -553,6 +582,19 @@
     }
     
     
+    
+    añgo{
+        background: linear-gradient(90deg, #333333, #5a5454, #333333 70%);
+background: linear-gradient(90deg, #430947, #783232, #200122);
+background: linear-gradient(90deg, #212121, #434343, #111111);
+background: linear-gradient(90deg, #2f524b, #539181, #0b211c);
+background: linear-gradient(90deg, #2f524b, #496f65, #0b211c);
+background: linear-gradient(90deg, #563062, #7c4286, #2d1136);
+
+background:linear-gradient(90deg,#676768 -6%, #BDC6C7, #676768 69%);
+
+
+    }
     
 /*Pages*/
     
