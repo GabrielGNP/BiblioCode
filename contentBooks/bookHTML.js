@@ -237,8 +237,9 @@ function selectInputHTML(value){
       break;
     /*case "summaryHTML":
       break;*/
-    /*case "dialogHTML":
-      break;*/
+    case "dialogHTML":
+      dialogHTMLSelected();
+      break;
     /*case "titlesHTML":
       break;*/
     /*case "paragraphHTML":
@@ -716,14 +717,81 @@ function detailsHTMLSelected(){
   '<h1>Etiqueta &ltdetails&gt</h1>'
   +'<p>Permite tener una caja desplegable de forma predeterminada sin necesidad de implementar JavaScript.<p>'
   +'<p>Dentro del &ltdetails&gt se utilizara la etiqueta &ltsummary&gt<p>'
-  +'<p>&ltsummary&gt&lt/summary&gt que indicará el “título” de esta caja desplegable.</p>'
+  +'<p>&ltsummary&gt&lt/summary&gt que indicará el “título” de esta caja desplegable. Todo lo que no esté dentro del summary no será visible al estar cerrado el &ltdetails&gt</p>'
   +'<div class="panelCodeView">'
     +'<div class="titleCodeView">HTML</div>'
     +'<pre class="codeView">'
-      +'&lt<b>label for</b>=<o>”name”</o>&gtNombre: &lt/<b>label</b>&gt\n'
-      +'&lt<b>input type</b>="text" <b>id</b>=<o>"name"</o> <b>name</b>=<o>"name"</o> <b>placeholder</b>=<o>"Escriba su nombre"</o>&gt\n'
+      +'&lt<b>details</b>&gt\n'
+      +'  &lt<b>summary</b>&gt título mostrado&lt/<b>summary</b>&gt\n'
+      +'  &lt<b>p</b>&gt contenido dentro del details &lt/<b>p</b>&gt\n'
+      +'&lt/<b>details</b>&gt\n'
     +'</pre>'
   +'</div>'
+  +'<details>'
+  +'  <summary>Título mostrado</summary>'
+  +'  <p>Contenido dentro del details</p>'
+  +'</details>'
+  +"<p>al hacer clic en el título summary o en el icono del details este se abrirá mostrando el contenido</p>"
+  +"<p>si se tiene la intención de que el details esté abierto desde el principio se debe agregar el atributo open en el details</p>"
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<b>details open</b>&gt\n'
+      +'  &lt<b>summary</b>&gt título mostrado&lt/<b>summary</b>&gt\n'
+      +'  &lt<b>p</b>&gt contenido dentro del details &lt/<b>p</b>&gt\n'
+      +'&lt/<b>details</b>&gt\n'
+    +'</pre>'
+  +'</div>'
+  +'<details open>'
+  +'  <summary>Título mostrado</summary>'
+  +'  <p>Contenido dentro del details</p>'
+  +'</details>'
+  ;
+  $q("#pageRight").innerHTML = htmlContentPageRight;  
+}
+
+function dialogHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>Etiqueta &ltdialog&gt</h1>'
+  +'<p>La etiqueta &ltdialog&gt se puede utilizar como una modal. La modal será como una ventana que se abrirá por encima del contenido por lo que no ocupará espacio.<p>'
+  +'<p>De forma predeterminada las modals estarán ocultas, para que esté visible desde el principio se utiliza el método open<p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<b>dialog open</b>&gt&lt/<b>dialog</b>&gt'
+    +'</pre>'
+  +'</div>'
+  +"<p>Normalmente están ocultas por lo que no se pone el método open. Las ocasiones donde sería necesario que esté abierto sería aquellos casos donde se necesita mostrar al iniciar una web.</p>"
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<b>dialog id="dialog"</b>&gt\n'
+      +'  &lt<b>h1</b>&gt¿Sabías que puedes abrir una modal así?&lt/<b>h1</b>&gt\n'
+      +'  &lt<b>p</b>&gt¡Y es totalmente nativo!&lt/<b>p</b>&gt\n'
+      +'  &lt<b>button id</b>=<o>”hide”</o>&gtCerrar modal&lt/<b>button</b>&gt\n'
+      +'&lt/<b>dialog</b>&gt\n'
+      +'&lt<b>button id</b>=<o>”show”</o>&gtAbrir modal&lt/<b>button</b>&gt'
+    +'</pre>'
+  +'</div>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">JS</div>'
+    +'<pre class="codeView">'
+    +'&lt<b>script</b>&gt'
+    +'  <b>windows</b>.show.addEventListener("click", () => {'
+    +'    windows.dialog.showModal();'
+    +'  }'
+    +'  windows.hide.addEventListener(‘click’, ()=>{'
+    +'    windows.dialog.close();'
+    +'  }'
+    +'&lt/script&gt'
+    +'</pre>'
+  +'</div>'
+  +'<dialog id=”dialog”>'
+	+'  <h1>¿Sabías que puedes abrir una modal así?</h1>'
+	+'  <p>¡Y es totalmente nativo!</p>'
+  +'  <button id=”hide”>Cerrar modal</button>'
+  +'</dialog>'
+  +'<button id=”show”>Abrir modal</button>'
   ;
   $q("#pageRight").innerHTML = htmlContentPageRight;  
 }
