@@ -143,20 +143,29 @@ body {
 .codeView{
     color:white;
 }
-g{ /*green*/
+green{ /*green*/
     color:#05d905;
+    font-weight: bold;
 }
-b{ /*blue*/
+blue{ /*blue*/
     color:#31b4d3;
+    font-weight: bold;
 }
-y{ /*yellow*/
+yellow{ /*yellow*/
     color:#f9e86e;
+    font-weight: bold;
 }
-o{ /*coral*/
+orange{ /*coral*/
     color:#eb8e55;
+    font-weight: bold;
 }
-f{
+violet{
     color:rgb(175, 112, 162);
+    font-weight: bold;
+}
+red{
+    color: red;
+    font-weight: bold;
 }
 
 
