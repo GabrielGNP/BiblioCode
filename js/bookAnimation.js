@@ -9,21 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
       top: 0,
       behavior: 'smooth', // Agrega una animación suave.
     });
-    $gi("bookDeconstructedMath").addEventListener('click', selectBook);
     $gi("bookJavaScript").addEventListener('click', selectBook);
     $gi("bookCPlusPlus").addEventListener('click', selectBook);
     $gi("bookJava").addEventListener('click', selectBook);
     $gi("bookDart").addEventListener('click', selectBook);
     $gi("bookCSharp").addEventListener('click', selectBook);
-    $gi("bookPseudocode").addEventListener('click', selectBook);
     $gi("bookPHP").addEventListener('click', selectBook);
     $gi("bookHTML").addEventListener('click', selectBook);
     $gi("bookCSS").addEventListener('click', selectBook);
     $gi("bookGit").addEventListener('click', selectBook);
-    $gi("bookMagicTest2").addEventListener('click', selectBook);
-    $gi("bookMagicTest3").addEventListener('click', selectBook);
-    $gi("bookMagicTest4").addEventListener('click', selectBook);
-    $gi("bookMagicTest5").addEventListener('click', selectBook);
+    $gi("bookSQL").addEventListener('click', selectBook);
 });
 
 function selectBook(){
