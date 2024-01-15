@@ -255,14 +255,18 @@ function selectInputHTML(value){
     case "listOlUlHTML":
 			ListUlOlHTMLSelected();
       break;
-    /*case "imgHTML":
-      break;*/
-    /*case "videoHTML":
-      break;*/
-    /*case "audioHTML":
-      break;*/
-    /*case "iframeHTML":
-      break;*/
+    case "imgHTML":
+      imgHTMLSelected();
+      break;
+    case "videoHTML":
+      videoHTMLSelected();
+      break;
+    case "audioHTML":
+      audioHTMLSelected();
+      break;
+    case "iframeHTML":
+      iframeHTMLSelected();
+      break;
     /*case "anchorHTML":
       break;*/
     case "labelHTML":
@@ -277,9 +281,13 @@ function selectInputHTML(value){
     /*case "buttonHTML":
       break;*/
     default:
-      $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
+      emptyPage();
   }
 }
+function emptyPage(){
+  $q("#pageRight").innerHTML = "<div style='height: 100%; width: 100%; display: grid; align-content: center; text-align: center; position: relative; right: -5%; font-size: 20px; font-weight: 700;'>Sin datos ...</div>";
+};
+
 
 function headHTMLSelected(){
   let htmlContentPageRight = 
@@ -937,7 +945,7 @@ function ListUlOlHTMLSelected(){
 	+'<div class="panelCodeView">'
     +'<div class="titleCodeView">HTML</div>'
     +'<pre class="codeView">'
-      +'&lt<blue>ol type="1"</blue>&gt\n'
+      +'&lt<blue>ol</blue> <lightblue>type</lightblue>=<orange>"1"</orange>&gt\n'
 			+'   &lt<blue>li</blue>&gtelemento 1&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 2&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 3&lt/<blue>li&gt</blue>\n'
@@ -953,7 +961,7 @@ function ListUlOlHTMLSelected(){
 	+'<div class="panelCodeView">'
     +'<div class="titleCodeView">HTML</div>'
     +'<pre class="codeView">'
-      +'&lt<blue>ol type="a"</blue>&gt\n'
+      +'&lt<blue>ol</blue> <lightblue>type</lightblue>=<orange>"a"</orange>&gt\n'
 			+'   &lt<blue>li</blue>&gtelemento a&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento b&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento c&lt/<blue>li&gt</blue>\n'
@@ -969,7 +977,7 @@ function ListUlOlHTMLSelected(){
 	+'<div class="panelCodeView">'
     +'<div class="titleCodeView">HTML</div>'
     +'<pre class="codeView">'
-      +'&lt<blue>ol reversed</blue>&gt\n'
+      +'&lt<blue>ol</blue> <lightblue>reversed</lightblue>&gt\n'
 			+'   &lt<blue>li</blue>&gtelemento 1&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 2&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 3&lt/<blue>li&gt</blue>\n'
@@ -985,7 +993,7 @@ function ListUlOlHTMLSelected(){
 	+'<div class="panelCodeView">'
 		+'<div class="titleCodeView">HTML</div>'
 		+'<pre class="codeView">'
-			+'&lt<blue>ol start="3"</blue>&gt\n'
+			+'&lt<blue>ol</blue> <lightblue>start</lightblue>=<orange>"3"</orange>&gt\n'
 			+'   &lt<blue>li</blue>&gtelemento 1&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 2&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 3&lt/<blue>li&gt</blue>\n'
@@ -1003,8 +1011,8 @@ function ListUlOlHTMLSelected(){
 		+'<pre class="codeView">'
 			+'&lt<blue>ol"</blue>&gt\n'
 			+'   &lt<blue>li</blue>&gtelemento 1&lt/<blue>li&gt</blue>\n'
-			+'   &lt<blue>li value="5"</blue>&gtelemento 2&lt/<blue>li&gt</blue>\n'
-			+'   &lt<blue>li value="3"</blue>&gtelemento 3&lt/<blue>li&gt</blue>\n'
+			+'   &lt<blue>li</blue> <lightblue>value</lightblue>=<orange>"5"</orange>&gtelemento 2&lt/<blue>li&gt</blue>\n'
+			+'   &lt<blue>li</blue> </lightblue>value</lightblue>=<orange>"3"</orange>&gtelemento 3&lt/<blue>li&gt</blue>\n'
 			+'   &lt<blue>li</blue>&gtelemento 4&lt/<blue>li&gt</blue>\n'
 			+'&lt/<blue>ol</blue>&gt'
 		+'</pre>'
@@ -1020,3 +1028,120 @@ function ListUlOlHTMLSelected(){
   ;
   $q("#pageRight").innerHTML = htmlContentPageRight; 
 }
+
+function imgHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>&ltimg&gt</h1>'
+  +'<p>La etiqueta &ltimg&gt se utiliza para agregar una imágen al documento.</p>'
+  +'<p>Esta estiqueta no tiene una etiqueta de cierre porque es un elemento reemplazable, no utiliza el contenido de la etiqueta.</p>'
+  +'<p>Se debe indicar el source que utilizará (src)</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>img</blue> <lightblue>src</lightblue>=<orange>""</orange>&gt'
+    +'</pre>'
+  +'</div>'
+  +'<p>Es posible aplicar una etiqueta de autocierre pero no es necesario.</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>img</blue> <lightblue>src</lightblue>=<orange>""</orange> /&gt'
+    +'</pre>'
+  +'</div>'
+  +'\n'
+  +'<p>el <strong>src</strong> es un atributo específico que no puede ser aplicado a cualquier etiqueta. Este atributo se aplicará dentro de la etiqueta y que se aplicará al elemento.</p>'
+  +'<p><strong>alt</strong> es otro atributo de img, permite mostrar un texto en caso de que la imagen no pueda mostrarse.</p>'
+  +'<p><strong>title</strong> es un atributo que permite dar una información relacionada con la imagen, Sirve para que cuando se posiciona el mouse sobre la imagen, da una información textual sobre la imagen.</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>img</blue>\n'
+      +'  <lightblue>title</lightblue>=<orange>"info imagen"</orange>\n'
+      +'  <lightblue>alt</lightblue>=<orange>"info en caso de no cargar"</orange>\n'
+      +'  <lightblue>src</lightblue>=<orange>"dirección de larchivo a mostrar"</orange>\n'
+      +'&gt'
+    +'</pre>'
+  +'</div>'
+  +'\n'
+  +'<p>Si agregamos el atributo loading="lazy" lo que hacemos es que la imagen se cargue más tarde en la página si no está siendo visible. Esto puede ayudar al rendimiento. Es recomendable no utilizarlo en imágenes que se muestren muy arriba en la página, esto es debido a que demora la carga de las imágenes y dependiendo de qué tan rápido se cargue la página, es posible ver un parpadeo en la imagen.</p>'
+  +'\n'
+  +'<p>El width="250" height="250" son atributos que permiten modificar el tamaño de la imagen mostrada en la pantalla.</p>'
+  +'<p>Esto deformaría la imagen si no se respeta la relación de aspecto. Para evitar esto se debe conocer la relación de aspecto de la imagen y utilizar los estilos CSS para ajustar el tamaño correctamente. Por ejemplo:</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>img</blue> <lightblue>style</lightblue>=<orange>"width:100%; aspect-ratio:638/317;"</orange>  <lightblue>style</lightblue>=<orange>"//..."</orange>/&gt'
+    +'</pre>'
+  +'</div>'
+  +'<p>\n\n\n\n</p>'
+  ;
+  $q("#pageRight").innerHTML = htmlContentPageRight; 
+}
+
+function videoHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>&ltvideo&gt</h1>'
+  +'<p>La etiqueta &ltvideo&gt permite mostrar un video en la página utilizando el atributo src="//" para escribir la url del video.</p>'
+  +'<p>El atributo <strong>controls</strong> permite agregar controles al elemento. Esto agrega los controles para pausar, reproducir, controlar el volumen, etc.</p>'
+  +'<p>El atributo <strong>muted</strong> silencia el video para que se reprodusca sin sonido.</p>'
+  +'<p>El atributo <strong>autoplay</strong> para que se reproduzca automáticamente al cargar la página. Pero el <strong>autoplay</strong> no reproduce automáticamente el video realmente si el usuario no ha interactuado primero. Para que siempre se inicie automáticamente se agrega el atributo <strong>muted</strong> junto con el <strong>autoplay</strong>.</p>'
+  +'<p>El atributo <strong>loop</strong> permite que cuando el video finalice, vuelva a reproducirse automáticamente.</p>'
+  +'<p>El atributo <strong>poster="//"</strong> permite poner una imagen que se mostrará del video al cargar la página. Si el video tiene el atributo <strong>autoplay</strong>, no se mostrará la imagen puesta como poster debido a que el video se reproduce automáticamente.</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>video</blue> <lightblue>src</lightblue>=<orange>"//"</orange>&gt'
+    +'</pre>'
+  +'</div>'
+  ;
+  $q("#pageRight").innerHTML = htmlContentPageRight; 
+}
+
+function audioHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>&ltaudio&gt</h1>'
+  +'<p>La etiqueta &ltaudio&gt permite poner un audio en la página para poder reproducirlo en la propia página.</p>'
+  +'<p>Funciona igual que la etiqueta video por lo que muchos de sus atributos son iguales</p>'
+  +'<p>El atributo <strong>controls</strong> permite agregar controles al elemento. Esto agrega los controles para pausar, reproducir, controlar el volumen, etc.</p>'
+  +'<p>El atributo <strong>muted</strong> silencia el audio para que se reprodusca sin sonido.</p>'
+  +'<p>El atributo <strong>autoplay</strong> para que se reproduzca automáticamente al cargar la página. Pero el <strong>autoplay</strong> no reproduce automáticamente el video realmente si el usuario no ha interactuado primero. Para que siempre se inicie automáticamente se agrega el atributo <strong>muted</strong> junto con el <strong>autoplay</strong>.</p>'
+  +'<p>El atributo <strong>loop</strong> permite que cuando el audio finalice, vuelva a reproducirse automáticamente.</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>audio</blue> <lightblue>src</lightblue>=<orange>"//"</orange>&gt'
+    +'</pre>'
+  +'</div>'
+  ;
+  $q("#pageRight").innerHTML = htmlContentPageRight; 
+}
+
+function iframeHTMLSelected(){
+  let htmlContentPageRight = 
+  '<h1>&ltiframe&gt</h1>'
+  +'<p>Un &ltiframe&gt permite integrar una página web dentro de otra. No todas las páginas web pueden integrarse.</p>'
+  +'<p>Para evitar que un &ltiframe&gt integre tu página web se utiliza un metadato en el &lthead&gt</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>iframe</blue> <lightblue>width</lightblue>=<orange>"100%"</orange> <lightblue>height</lightblue>=<orange>"415"</orange> <lightblue>src</lightblue>=<orange>"https://gabrielgnp.github.io/Portafolio-2.0"</orange>&gt'
+    +'</pre>'
+  +'</div>'
+  +'<p>El iframe puede tener muchos otros atributos como:</p>'
+  +'<p>El atributo <strong>title</strong> agrega un titulo que se mostrará al poner el puntero sobre el iframe</p>'
+  +'<p>El atributo <strong>frameborder</strong> elimina el borde que se mostrara en el iframe</p>'
+  +'<p>El atributo <strong>allowfullscreen</strong> permite que cuando se le de a la pantalla completa, se muestre en pantalla completa</p>'
+  +'<p>El atributo <strong>allow</strong> indica los permisos que tendrá el iframe, por ejemplo:</p>'
+  +'<div class="panelCodeView">'
+    +'<div class="titleCodeView">HTML</div>'
+    +'<pre class="codeView">'
+      +'&lt<blue>iframe</blue> <lightblue>allow</lightblue>=<orange>"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"</orange>&gt'
+    +'</pre>'
+  +'</div>'
+  +'<p>Se debe tener cuidado con los permisos que se agregan al iframe, puede generar brechas de seguridad.</p>'
+  +'<p>A los &ltiframe&gt se les puede aplicar aspect-ratio igual que a las imágenes.</p>'
+  +'<iframe width="100%" height="415" src=https://gabrielgnp.github.io/Portafolio-2.0>'
+  ;
+  $q("#pageRight").innerHTML = htmlContentPageRight; 
+}
+
